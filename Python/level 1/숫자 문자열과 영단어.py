@@ -1,3 +1,5 @@
+# 내 코드
+
 def solution(s) :
   
     number1 = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
