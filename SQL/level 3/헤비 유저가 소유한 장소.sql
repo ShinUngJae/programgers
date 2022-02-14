@@ -1,0 +1,20 @@
+SELECT ID, NAME, HOST_ID
+FROM PLACES PL1
+WHERE EXISTS (SELECT 1
+                FROM PLACES PL2
+                WHERE PL1.HOST_ID = PL2.HOST_ID
+                GROUP BY PL2.HOST_ID
+                HAVING COUNT(*) > 1)
+ORDER BY ID ASC ;
+
+
+
+
+
+SELECT ID, NAME, HOST_ID
+FROM PLACES
+WHERE HOST_ID IN (SELECT HOST_ID
+                FROM PLACES
+                GROUP BY HOST_ID
+                HAVING COUNT(*) > 1)
+ORDER BY ID ASC ;
