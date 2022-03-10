@@ -20,7 +20,7 @@ def solution(n) :
   
   
   
-  
+ 
   
   
   
