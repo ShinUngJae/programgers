@@ -1,7 +1,7 @@
 # 내 코드
 def solution(board, moves) :
     answer = 0
-    new_board = list(map(list, zip(*board)))
+    new_board = list(map(list, zip(*board))) # array에서 행과 열 바꾸기
     for i in range(len(board[0])) :
         new_board[i].reverse()
         
