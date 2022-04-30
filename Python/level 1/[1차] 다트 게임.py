@@ -152,7 +152,6 @@ def solution(dartResult):
     answer = []
     dartResult = dartResult.replace('10','k')
     point = ['10' if i == 'k' else i for i in dartResult]
-    print(point)
 
     i = -1
     sdt = ['S', 'D', 'T']
