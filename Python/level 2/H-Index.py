@@ -6,7 +6,7 @@ def solution(citations):
             return c-i
     return 0
   
-  
+  # c-i를 H라고 생각
   
   
   
