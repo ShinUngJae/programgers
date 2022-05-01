@@ -27,3 +27,9 @@ def solution(expression) :
     return answer
   
   
+# 순열 -> from itertools import permutations
+# 조합 -> from itertools import combinations
+# 중복순열 -> from itertools import products # repeat
+# 중복조합 -> from itertools import combinations_with_replacement # repeat
+
+
