@@ -108,3 +108,6 @@ def solution(n):
         if 0<=ny<n and 0<=nx<=ny and b[ny][nx]==0:y,x=ny,nx
         else:d=(d+1)%3;y+=dy[d];x+=dx[d]
     return sum(b,[])
+
+# sum(b,[]) -> 리스트를 더해준다.
+# 초기값 []에 b의 원소들을 계속 더해준다는 뜻 -> 따라서 하나의 리스트가 만들어진다.
